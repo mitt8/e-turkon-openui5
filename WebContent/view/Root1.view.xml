@@ -5,7 +5,7 @@
         xmlns:core="sap.ui.core"
         xmlns:mvc="sap.ui.core.mvc">
 
-        <ScrollContainer id="page1"
+        <ScrollContainer id="subpage1"
                              horizontal="false"
                              vertical="true"
                              height="100%">

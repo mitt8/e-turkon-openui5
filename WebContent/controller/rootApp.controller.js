@@ -21,7 +21,7 @@ sap.ui.define([
 					key: 'tracking'
 				}, {
 					title: 'VGM',
-					key: 'subpage2'
+					key: 'history'
 				}]
 			}, {
 				title: 'Documents',

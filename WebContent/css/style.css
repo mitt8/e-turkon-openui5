@@ -21,8 +21,6 @@
 }
 
 .pBarIcon{
-	
-
 	border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
     border-top-left-radius: 3rem;
@@ -34,12 +32,11 @@
     line-height: 2.75rem;
     overflow: hidden; 
     width: 3rem;
-    content:"Test";
 	
 }
 
 .pBarLandscape{
-	margin-left:8%;
+	margin-left:5%;
 }
 
 .pBarPortrait{
