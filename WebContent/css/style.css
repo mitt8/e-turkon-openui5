@@ -1,0 +1,50 @@
+.pBarTrue{
+		    background: #2b7d2b;
+    color: #ffffff;
+	
+}
+
+.pBarFalse{
+		    border-color: #2b7d2b;
+       color: #2b7d2b;
+       
+    border-top-style: solid;
+     border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    
+	
+}
+
+.pBarIcon{
+	
+
+	border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 3rem;
+    line-height: 2.75rem;
+    overflow: hidden; 
+    width: 3rem;
+    content:"Test";
+	
+}
+
+.pBarLandscape{
+	margin-left:8%;
+}
+
+.pBarPortrait{
+	margin-left:5px;
+	
+}
+
+
