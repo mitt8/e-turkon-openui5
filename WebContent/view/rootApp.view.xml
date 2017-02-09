@@ -20,7 +20,7 @@
                     </layoutData>
                 </Button>
                 <ToolbarSpacer width="20px" />
-                <Button text="File" type="Transparent">
+                <!-- <Button text="File" type="Transparent">
                     <layoutData>
                         <OverflowToolbarLayoutData priority="Low" />
                     </layoutData>
@@ -49,7 +49,7 @@
                     <layoutData>
                         <OverflowToolbarLayoutData priority="Low" />
                     </layoutData>
-                </Button>
+                </Button> -->
             </tnt:ToolHeader>
         </tnt:header>
         <tnt:sideContent>

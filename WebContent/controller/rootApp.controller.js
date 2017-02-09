@@ -21,7 +21,7 @@ sap.ui.define([
 					key: 'tracking'
 				}, {
 					title: 'VGM',
-					key: 'history'
+					key: 'cntHistory'
 				}]
 			}, {
 				title: 'Documents',
@@ -41,24 +41,24 @@ sap.ui.define([
 				}, {
 					title: 'Fixed Item 3',
 					icon: 'sap-icon://card'
-			}],
-			headerItems: [
-				{
-					text: "File"
-				}, {
-					text: "Edit"
-				}, {
-					text: "View"
-				}, {
-					text: "Settings"
-				}, {
-					text: "Help"
-				}]
+			}]
+//			headerItems: [
+//				{
+//					text: "File"
+//				}, {
+//					text: "Edit"
+//				}, {
+//					text: "View"
+//				}, {
+//					text: "Settings"
+//				}, {
+//					text: "Help"
+//				}]
 		},
 		onInit: function() {
 			this.model.setData(this.data);
 			this.getView().setModel(this.model);
-			this._setToggleButtonTooltip(!sap.ui.Device.system.desktop);
+//			this._setToggleButtonTooltip(!sap.ui.Device.system.desktop);
 		},
 
 		/**

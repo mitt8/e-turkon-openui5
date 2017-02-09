@@ -7,7 +7,6 @@
     "i18n": "i18n/i18n.properties",
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
-    "description": "{{appDescription}}",
     "applicationVersion": {
       "version": "1.0.0"
     }
@@ -15,11 +14,7 @@
   "sap.ui": {
     "_version": "1.1.0",
     "technology": "UI5",
-    "deviceTypes": {
-      "desktop": true,
-      "tablet": true,
-      "phone": true
-    },
+   
     "deviceTypes": {
       "desktop": true,
       "tablet": true,
@@ -73,11 +68,13 @@
         "async": true
       },
       "routes": [
+      
         {
-          "pattern": "",
-          "name": "page1",
-          "target": "page1"
+        "pattern": "cntHistory",
+          "name": "cntHistory",
+          "target": "cntHistory"
         },
+      
         {
           "pattern": "page1",
           "name": "page1",
@@ -103,8 +100,13 @@
           "name": "subpage2",
           "target": "subpage2"
         }
+        
       ],
       "targets": {
+       "cntHistory": {
+          "viewName": "containerHistory"
+        },
+      
         "page1": {
           "viewName": "Root1"
         },
@@ -120,6 +122,8 @@
         "page3": {
           "viewName": "Root3"
         }
+       
+        
       }
     }
   }

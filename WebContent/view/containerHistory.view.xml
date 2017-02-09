@@ -1,0 +1,74 @@
+<core:View
+        xmlns="sap.m"
+
+        xmlns:l="sap.ui.layout"
+        xmlns:core="sap.ui.core"
+        xmlns:mvc="sap.ui.core.mvc"
+       >
+        <Page title="BSIU9311649" showNavButton="true"  navButtonPress="onNavBack">
+        
+        
+        
+            <ScrollContainer id="cntHistory"
+                             horizontal="false"
+                             vertical="true"
+                             height="100%">
+                             
+              
+                 <Table noDataText="Drop column list items here and columns in the area above" id="__table0">
+				        <items>
+				        
+				          <ColumnListItem id="_item3">
+				                <cells items="{path: '/movementLineItem'}">
+				                    <Text text="USA, New York"/>
+				                    <Text text="2.13.2016"/>
+				                    <Text text="Received Full"/>
+				                </cells>
+				            </ColumnListItem>
+				          
+				            
+				            <ColumnListItem id="_item2">
+				                <cells items="{path: '/movementLineItem'}">
+				                    <Text text="USA, New York"/>
+				                    <Text text="2.12.2016"/>
+				                    <Text text="Dispatch Empty"/>
+				                </cells>
+				            </ColumnListItem>
+				            
+				            <ColumnListItem id="_item1">
+				                <cells items="{path: '/movementLineItem'}">
+				                    <Text text="USA, New York"/>
+				                    <Text text="2.1.2016"/>
+				                    <Text text="Booked"/>
+				                </cells>
+				            </ColumnListItem>
+				        </items>
+				           
+				          
+				        <columns>
+				            <Column id="__column0">
+				                <header>
+				                    <Label text="Location" id="__label0"/>
+				                </header>
+				            </Column>
+				            <Column id="__column1">
+				                <header>
+				                    <Label text="Date" id="__label1"/>
+				                </header>
+				            </Column>
+				            <Column id="__column2">
+				                <header>
+				                    <Label text="Movement" id="__label2"/>
+				                </header>
+				            </Column></columns>
+				            
+				            
+				            </Table>
+                
+                
+            </ScrollContainer>
+            </Page>
+            
+            
+            
+</core:View>
