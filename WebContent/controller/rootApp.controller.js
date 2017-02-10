@@ -17,6 +17,10 @@ sap.ui.define([
 				expanded: true,
 				key: 'page1',
 				items: [{
+					title: 'My Shipments',
+					key: 'page2'
+					
+				},{
 					title: 'Tracking',
 					key: 'tracking'
 				}, {
@@ -26,7 +30,15 @@ sap.ui.define([
 			}, {
 				title: 'Documents',
 				icon: 'sap-icon://documents',
-				key: 'page2'
+				key: 'page2',
+				items:[{
+					title:'Bill of Lading'
+				},{
+					title: 'Arrival Notice'
+				}
+				
+				]		
+					
 			}, {
 				title: 'My Account',
 				icon: 'sap-icon://employee',
@@ -56,6 +68,7 @@ sap.ui.define([
 //				}]
 		},
 		onInit: function() {
+			console.log("testttt");
 			this.model.setData(this.data);
 			this.getView().setModel(this.model);
 //			this._setToggleButtonTooltip(!sap.ui.Device.system.desktop);

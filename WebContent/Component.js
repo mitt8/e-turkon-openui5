@@ -20,7 +20,11 @@ sap.ui.define([
 				}
 			};
 			var oModel = new JSONModel(oData);
+			oModel.loadData("model/mock.json");
 			this.setModel(oModel);
+//			
+//			var oModel = new sap.ui.model.json.JSONModel("model/mock.json");
+//			oView.setModel(oModel);
 
 			// set i18n model
 //			var i18nModel = new ResourceModel({

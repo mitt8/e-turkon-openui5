@@ -1,9 +1,10 @@
 <core:View
         xmlns="sap.m"
-
         xmlns:l="sap.ui.layout"
         xmlns:core="sap.ui.core"
         xmlns:mvc="sap.ui.core.mvc"
+        controllerName="sap.ui.demo.toolpageapp.controller.containerHistory"
+        id="cntHistory"
        >
         <Page title="BSIU9311649" showNavButton="true"  navButtonPress="onNavBack">
         
@@ -14,7 +15,7 @@
                              vertical="true"
                              height="100%">
                              
-              
+           
                  <Table noDataText="Drop column list items here and columns in the area above" id="__table0">
 				        <items>
 				        

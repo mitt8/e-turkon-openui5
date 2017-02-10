@@ -3,30 +3,34 @@
         xmlns:tnt="sap.tnt"
         xmlns:l="sap.ui.layout"
         xmlns:core="sap.ui.core"
-        xmlns:mvc="sap.ui.core.mvc">
-
+        xmlns:mvc="sap.ui.core.mvc"
+        controllerName="sap.ui.demo.toolpageapp.controller.tracking"
+        
+        >
+        	 <Input width="auto" id="input0" placeholder="Container/Booking/BL" />
+              <Button text="Search" width="auto" id="searchButton"/>
+            
+	<Page title="" id="trackingResult">
             <ScrollContainer id="tracking"
                              horizontal="false"
                              vertical="true"
                              height="100%">
-              <Input width="auto" id="input0" placeholder="Container/Booking/BL" />
-              <Button text="Search" width="auto" id="searchButton"/>
-            
-					     <IconTabBar selectedKey="__cinfo" id="__cinfo">
+             
+					     <IconTabBar  >
 					    <items>
 					        <IconTabFilter text="Voyage" showAll="true" id="__vessel">
 					            <content>
 					                <List noDataText="No data" id="__voyageList">
 					                    <items>
-					                        <StandardListItem title="US1635W" id="__voyageItem"/></items>
+					                        <StandardListItem title="{/voyage}"/></items>
 					                </List>
 					            </content>
 					        </IconTabFilter>
-					        <IconTabFilter text="Vessel" showAll="true" id="__voyage">
+					        <IconTabFilter text="Vessel" showAll="true" class="cinfoTabs" id="__voyage">
 					            <content>
 					                <List noDataText="No data" id="__vesselList">
 					                    <items>
-					                        <StandardListItem title="Kaan Kalkavan" id="__vesselItem"/></items>
+					                        <StandardListItem title="{/vessel}" id="__vesselItem"/></items>
 					                </List>
 					            </content>
 					        </IconTabFilter>
@@ -34,7 +38,7 @@
 					            <content>
 					                <List noDataText="No data" id="__polList">
 					                    <items>
-					                        <StandardListItem title="Spain, Algeciras" id="__polItem"/></items>
+					                        <StandardListItem title="{/pol}" id="__polItem"/></items>
 					                </List>
 					            </content>
 					        </IconTabFilter>
@@ -63,8 +67,7 @@
 					            </content>
 					        </IconTabFilter>
 					        
-					        
-					     </items>
+					        </items>
 					</IconTabBar>           
 					        
 					        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" defaultSpan="XL2 L2 M2 S2" position="center" width="100%" id="__layout1123">
@@ -92,7 +95,7 @@
 					            <content>
 					                <List noDataText="No data" id="__list0">
 					                    <items>
-					                        <ActionListItem type="Navigation" text="BSIU9311649"   id="__item0"/>
+					                        <ActionListItem type="Navigation" press="onCntHistoryPress" text="BSIU9311649"   id="__item0"/>
 					                        <ActionListItem  type="Navigation"  text="BSIU9318793"  id="__item1"/>
 					                        <ActionListItem  type="Navigation"  text="CAIU8048851" id="__item2"/></items>
 					                </List>
@@ -103,7 +106,7 @@
                              
             </ScrollContainer>
 
-
+</Page>
 </core:View>
 
 

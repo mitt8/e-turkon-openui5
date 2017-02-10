@@ -8,21 +8,23 @@ sap.ui.define([
 ], function (jQuery, Fragment, Controller, JSONModel, Popover, Button) {
 	"use strict";
 	
-	var CController = Controller.extend("sap.ui.demo.toolpageapp.controller.containerHistory", {
-
+	var CController = Controller.extend("sap.ui.demo.toolpageapp.controller.tracking", {
+		
+		
 	onInit: function(){
-	
+		var oModel = new JSONModel("model/mock.json");
+		this.getView().setModel(oModel);
+		
 	},
 	getRouter: function() {
 		return sap.ui.core.UIComponent.getRouterFor(this);
 	},
 	
-	onNavBack: function(){
-		
-		this.getRouter().navTo("tracking");
-		
+	onCntHistoryPress: function(){
+		this.getRouter().navTo("cntHistory");
 		
 	}
+	
 	
 	})
 }
